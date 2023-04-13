@@ -11,6 +11,11 @@ class Bariskolom extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Belajar Baris Kolom"),
       ),
+      body: Column(
+        children: [
+          Row(Text("Row 1"), Text("Row 2"), Text("Row 3"), Text("Row 4")),
+        ],
+      ),
     );
   }
 }
