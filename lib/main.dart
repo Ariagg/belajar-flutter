@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'baris_kolom.dart';
-
+import 'ui/poli_page.dart';
 void main() => runApp(MyApp());
 
 class MyApp  extends StatelessWidget {
@@ -9,7 +8,7 @@ class MyApp  extends StatelessWidget {
     return MaterialApp(
       title: 'Klinik App',
       debugShowCheckedModeBanner:  false,
-      home: bariskolom(),
+      home: PoliPage(),
     );
   }
 }
