@@ -16,7 +16,7 @@ class bariskolom extends StatelessWidget {
             children: <Widget>[
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: <Widget>[
+                children: const <Widget>[
                   Text(
                     'Baris 1, kolom 1'
                   ),
@@ -30,7 +30,7 @@ class bariskolom extends StatelessWidget {
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: <Widget>[
+                children: const <Widget>[
                   Text(
                     'Baris 2, kolom 1'
                   ),
@@ -44,7 +44,7 @@ class bariskolom extends StatelessWidget {
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: <Widget>[
+                children: const <Widget>[
                   Text(
                     'Baris 3, kolom 1'
                   ),
