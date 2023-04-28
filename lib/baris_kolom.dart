@@ -1,20 +1,64 @@
 import 'package:flutter/material.dart';
-import 'collumn_widget.dart';
-import 'row_widget.dart';
 
-class Bariskolom extends StatelessWidget {
-  const Bariskolom({Key? key}) : super(key: key);
-
+class bariskolom extends StatelessWidget {
+  const bariskolom({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Belajar Baris Kolom"),
-      ),
-      body: Column(
-        children: [
-          Row(Text("Row 1"), Text("Row 2"), Text("Row 3"), Text("Row 4")),
-        ],
+    return MaterialApp(
+      title: 'Baris dan Kolom',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Baris dan Kolom'),
+        ),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: <Widget>[
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  Text(
+                    'Baris 1, kolom 1'
+                  ),
+                  Text(
+                    'Baris 1, Kolom 2'
+                  ),
+                  Text(
+                    'Baris 1, Kolom 3'
+                  ),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  Text(
+                    'Baris 2, kolom 1'
+                  ),
+                  Text(
+                    'Baris 2, Kolom 2'
+                  ),
+                  Text(
+                    'Baris 2, Kolom 3'
+                  ),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  Text(
+                    'Baris 3, kolom 1'
+                  ),
+                  Text(
+                    'Baris 3, Kolom 2'
+                  ),
+                  Text(
+                    'Baris 3, Kolom 3'
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }

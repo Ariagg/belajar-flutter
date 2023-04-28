@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
-import '/ui/poli_page.dart';
+import 'baris_kolom.dart';
 
 void main() => runApp(MyApp());
 
-class MyApp extends StatelessWidget {
+class MyApp  extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'klinik APP',
-      debugShowCheckedModeBanner: false,
-      home: PoliPage(),
+      title: 'Klinik App',
+      debugShowCheckedModeBanner:  false,
+      home: bariskolom(),
     );
   }
 }
+
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
