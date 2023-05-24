@@ -1,6 +1,6 @@
-import 'package:belajarflutter/model/poli.dart';
-import 'package:belajarflutter/ui/poli_detail.dart';
 import 'package:flutter/material.dart';
+import '../model/poli.dart';
+import '../ui/poli_detail.dart';
 
 class PoliForm extends StatefulWidget {
   const PoliForm({Key? key}) : super(key: key);
@@ -19,9 +19,6 @@ class _PoliFormState extends State<PoliForm> {
         child: Form(
           key: _formKey,
           child: Column(
-            children: [
-              _fieldNamaPoli(), SizedBox(height: 20), _tombolSimpan()
-            ],
           ),
         ),
       ),
@@ -35,11 +32,12 @@ class _PoliFormState extends State<PoliForm> {
   }
 
   _tombolSimpan() {
-    return ElevatedButton(onPressed: () { 
-      Poli poli = new Poli(namaPoli: _namaPoliCtrl.text);
-      Navigator.pushReplacement(context,
-      MaterialPageRoute(builder: (context) => PoliDetail(poli: poli)));
-    }, 
-    child: const Text("Simpan"));
+    return ElevatedButton(
+        onPressed: () {
+          Poli poli = new Poli(namaPoli: _namaPoliCtrl.text);
+          Navigator.pushReplacement(context,
+              MaterialPageRoute(builder: (context) => PoliDetail(poli: poli)));
+        },
+        child: const Text("Simpan"));
   }
 }
