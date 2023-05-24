@@ -19,6 +19,7 @@ class _PoliFormState extends State<PoliForm> {
         child: Form(
           key: _formKey,
           child: Column(
+            children: [_fieldNamaPoli(), SizedBox(height: 20), _tombolSimpan()],
           ),
         ),
       ),
